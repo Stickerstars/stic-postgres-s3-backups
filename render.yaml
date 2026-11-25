@@ -25,7 +25,5 @@ services:
         sync: false
       - key: AWS_SECRET_ACCESS_KEY
         sync: false
-      # Postgres version of your Postgres instance 
-      # For example, 14
-      - key: POSTGRES_VERSION
-        sync: false
+      # POSTGRES_VERSION and ALPINE_VERSION are optional build settings.
+      # The Dockerfile defaults to the Postgres 18 client on Alpine 3.23.
